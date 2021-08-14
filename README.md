@@ -45,3 +45,6 @@
 - 提案先の写真、簡単なinfo、マップ(GoogleMapAPI)を表示
 - 該当する島が複数ある場合はその中からランダムで数カ所提案
 - Twitterへのシェア機能
+
+## 画面遷移図
+https://www.figma.com/file/hiYnjtiNBy7LX89RZsIw1g/%E7%94%BB%E9%9D%A2%E9%81%B7%E7%A7%BB%E5%9B%B3
