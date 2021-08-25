@@ -14,3 +14,61 @@
  *= require_tree .
  *= require_self
  */
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: #FFFFDD;
+}
+
+.btn-diagnosis {
+  color: white;
+  background-color: #FF88FF;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.btn-diagnosis:hover {
+  color: white;
+  background-color: #FF66FF;
+  transform: scale(1.1);
+}
+
+.content_wrapper {
+  height: 100%;
+  text-align: center;
+}
+
+.container {
+  line-height: 40px;
+}
+
+.service-name {
+  margin-top: 10px;
+}
+
+.header {
+  padding: 10px;
+  border-bottom: 1px solid #000;
+}
+
+.header-logo {
+  margin-bottom: 0;
+}
+
+.footer {
+  text-align: center;
+  padding-top: 10px;
+  border-top: 1px solid #000;
+}
+
+.footer-item {
+  margin: 10px;
+}
+
+.copyright {
+  font-size: 13px;
+}
