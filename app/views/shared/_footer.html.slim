@@ -1,6 +1,15 @@
 .footer
-  a.footer-item href="#" 利用規約
-  a.footer-item href="#" プライバシーポリシー
+  / = link_to '利用規約', remote: true, id: 'js-terms-modal-open', class: 'footer-item'
+  a.footer-item.js-terms-modal-open href="#" data-remote='true' 利用規約
+  .modal.js-terms-modal
+    .modal-bg.js-terms-modal-close
+      .modal-content
+        = render 'shared/terms'
+  a.footer-item.js-privacy-policy-modal-open href="#" data-remote='true' プライバシーポリシー
+  .modal.js-privacy-policy-modal
+    .modal-bg.js-privacy-policy-modal-close
+      .modal-content
+        = render 'shared/privacy_policy'
   a.footer-item href="#" お問い合わせ
   .copyright
     p
