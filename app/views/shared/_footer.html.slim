@@ -1,16 +1,17 @@
 .footer
-  / = link_to '利用規約', remote: true, id: 'js-terms-modal-open', class: 'footer-item'
-  a.footer-item.js-terms-modal-open href="#" data-remote='true' 利用規約
+  = link_to '利用規約', '', remote: true, class: 'footer-item js-terms-modal-open'
   .modal.js-terms-modal
     .modal-bg.js-terms-modal-close
       .modal-content
         = render 'shared/terms'
-  a.footer-item.js-privacy-policy-modal-open href="#" data-remote='true' プライバシーポリシー
+  = link_to 'プライバシーポリシー', '', remote: true, class: 'footer-item js-privacy-policy-modal-open'
   .modal.js-privacy-policy-modal
     .modal-bg.js-privacy-policy-modal-close
       .modal-content
         = render 'shared/privacy_policy'
-  a.footer-item href="#" お問い合わせ
+  = link_to 'お問い合わせ',
+            'https://docs.google.com/forms/d/e/1FAIpQLSeDRKK13Q8fHzjLXKOKmDYy2vQ1NbXHDyaLEOntLl0_U9UzEw/viewform?usp=sf_link',
+            target: :_blank,
+            rel: 'noopener noreferrer'
   .copyright
-    p
-      | ©︎2021 シマサガシ
+    p ©︎2021 シマサガシ
