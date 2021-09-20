@@ -1,0 +1,8 @@
+.content_wrapper
+  .question-card#question
+    h2#question_title Q5.動物と触れ合いたい？歴史に浸りたい？
+    h3 A:動物 or B:歴史
+    = link_to 'A', results_path(tag: { name: '動物' }), class: 'btn btn-a', id: 'button_a', method: :put
+    = link_to 'B', results_path(tag: { name: '歴史' }), class: 'btn btn-b', id: 'button_b', method: :put
+    / = link_to 'A', results_path(tag: { name: '動物' }), class: 'btn btn-a', id: 'button_a'
+    / = link_to 'B', results_path(tag: { name: '歴史' }), class: 'btn btn-b', id: 'button_b'
