@@ -24,53 +24,6 @@ body {
   background-color: #F4F4E9;
 }
 
-.btn-diagnosis {
-  color: white;
-  background-color: #FF88FF;
-  font-weight: bold;
-  transition: .3s;
-  text-decoration: none;
-}
-
-.btn-diagnosis:hover {
-  color: white;
-  background-color: #FF66FF;
-  transform: scale(1.1);
-}
-
-.btn-a {
-  color: white;
-  background-color: deepskyblue;
-  font-weight: bold;
-  transition: .3s;
-  text-decoration: none;
-  padding-right: 30px;
-  padding-left: 30px;
-  margin-right: 30px;
-}
-
-.btn-a:hover {
-  color: white;
-  background-color: dodgerblue;
-  transform: scale(1.1);
-}
-
-.btn-b {
-  color: white;
-  background-color: orange;
-  font-weight: bold;
-  transition: .3s;
-  text-decoration: none;
-  padding-right: 30px;
-  padding-left: 30px;
-}
-
-.btn-b:hover {
-  color: white;
-  background-color: darkorange;
-  transform: scale(1.1);
-}
-
 .content_wrapper {
   height: 100%;
   text-align: center;
