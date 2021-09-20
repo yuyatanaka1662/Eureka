@@ -1,0 +1,15 @@
+.content_wrapper
+  h3.results あなたにおすすめの島は…
+  h4
+    = @island.name
+    br
+  p
+    = @island.description
+    br
+    = @island.information
+  .retry-button
+    = link_to 'もう一度診断する', shindan1_path, class: 'btn btn-diagnosis'
+
+/ - Island.joins(:tags).select('tags.name').each do |island, tag|
+/   - if @answers == tag.name.split('')
+/     = puts island.name
