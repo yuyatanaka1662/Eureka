@@ -1,5 +1,5 @@
 class ResultsController < ApplicationController
-  def index
+  def results
     # binding.pry
     session[:answer] << params[:tag][:name]
     # binding.pry
