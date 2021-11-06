@@ -1,0 +1,7 @@
+.content_wrapper
+  .question-card#question
+    h2#question_title Q2.廃墟と芸術どっちに心惹かれる？
+    h3 A:廃墟 or B:芸術
+    = link_to 'A', shindan3_path(tag: { name: '廃墟' }), controller: 'questions', action: 'shindan3', class: 'btn btn-a', id: 'button_a'
+    = link_to 'B', shindan3_path(tag: { name: '芸術' }), controller: 'questions', action: 'shindan3', class: 'btn btn-b', id: 'button_b'
+

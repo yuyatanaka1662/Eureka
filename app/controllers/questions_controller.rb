@@ -1,23 +1,32 @@
 class QuestionsController < ApplicationController
-  def create
-    # tag = []
+  def shindan1; end
+
+  def shindan2
     # binding.pry
-    # @tag = tag << params[:tag][:name]
+    if session[:answer] != nil
+      session[:answer].clear
+    end
     # binding.pry
-    answers = []
-    # binding.pry
-    @answers = answers << params[:tag][:name]
-    # binding.pry
-    redirect_to shindan2_path
+    session[:answer] = []
+    session[:answer] << params[:tag][:name]
     # binding.pry
   end
 
-  def update
+  def shindan3
     # binding.pry
-    answers = []
+    session[:answer] << params[:tag][:name]
     # binding.pry
-    @answers = answers << params[:tag][:name]
+  end
+
+  def shindan4
     # binding.pry
-    redirect_to shindan3_path
+    session[:answer] << params[:tag][:name]
+    # binding.pry
+  end
+
+  def shindan5
+    # binding.pry
+    session[:answer] << params[:tag][:name]
+    # binding.pry
   end
 end

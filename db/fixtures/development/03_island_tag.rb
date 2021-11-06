@@ -1,6 +1,55 @@
 IslandTag.seed(:id,
   { id: 1, island: Island.find_by(name: '友ヶ島'), tag: Tag.find_by(name: '海') },
-  { id: 2, island: Island.find_by(name: '屋久島'), tag: Tag.find_by(name: '森') },
-  { id: 3, island: Island.find_by(name: '池島'), tag: Tag.find_by(name: '廃墟') },
-  { id: 4, island: Island.find_by(name: '犬島'), tag: Tag.find_by(name: '芸術') }
+  { id: 2, island: Island.find_by(name: '友ヶ島'), tag: Tag.find_by(name: '廃墟') },
+  { id: 3, island: Island.find_by(name: '友ヶ島'), tag: Tag.find_by(name: 'のんびり') },
+  { id: 4, island: Island.find_by(name: '友ヶ島'), tag: Tag.find_by(name: '初心者') },
+  { id: 5, island: Island.find_by(name: '友ヶ島'), tag: Tag.find_by(name: '歴史') },
+
+  { id: 6, island: Island.find_by(name: '屋久島'), tag: Tag.find_by(name: '森') },
+  { id: 7, island: Island.find_by(name: '屋久島'), tag: Tag.find_by(name: '廃墟') },
+  { id: 8, island: Island.find_by(name: '屋久島'), tag: Tag.find_by(name: 'アクティビティ') },
+  { id: 9, island: Island.find_by(name: '屋久島'), tag: Tag.find_by(name: '玄人') },
+  { id: 10, island: Island.find_by(name: '屋久島'), tag: Tag.find_by(name: '動物') },
+
+  { id: 11, island: Island.find_by(name: '池島'), tag: Tag.find_by(name: '海') },
+  { id: 12, island: Island.find_by(name: '池島'), tag: Tag.find_by(name: '廃墟') },
+  { id: 13, island: Island.find_by(name: '池島'), tag: Tag.find_by(name: 'のんびり') },
+  { id: 14, island: Island.find_by(name: '池島'), tag: Tag.find_by(name: '玄人') },
+  { id: 15, island: Island.find_by(name: '池島'), tag: Tag.find_by(name: '歴史') },
+
+  { id: 16, island: Island.find_by(name: '犬島'), tag: Tag.find_by(name: '海') },
+  { id: 17, island: Island.find_by(name: '犬島'), tag: Tag.find_by(name: '芸術') },
+  { id: 18, island: Island.find_by(name: '犬島'), tag: Tag.find_by(name: 'のんびり') },
+  { id: 19, island: Island.find_by(name: '犬島'), tag: Tag.find_by(name: '初心者') },
+  { id: 20, island: Island.find_by(name: '犬島'), tag: Tag.find_by(name: '歴史') },
+
+  { id: 21, island: Island.find_by(name: '柏島'), tag: Tag.find_by(name: '海') },
+  { id: 22, island: Island.find_by(name: '柏島'), tag: Tag.find_by(name: '芸術') },
+  { id: 23, island: Island.find_by(name: '柏島'), tag: Tag.find_by(name: 'のんびり') },
+  { id: 24, island: Island.find_by(name: '柏島'), tag: Tag.find_by(name: '初心者') },
+  { id: 25, island: Island.find_by(name: '柏島'), tag: Tag.find_by(name: '動物') },
+
+  { id: 26, island: Island.find_by(name: '大久野島'), tag: Tag.find_by(name: '海') },
+  { id: 27, island: Island.find_by(name: '大久野島'), tag: Tag.find_by(name: '廃墟') },
+  { id: 28, island: Island.find_by(name: '大久野島'), tag: Tag.find_by(name: 'のんびり') },
+  { id: 29, island: Island.find_by(name: '大久野島'), tag: Tag.find_by(name: '玄人') },
+  { id: 30, island: Island.find_by(name: '大久野島'), tag: Tag.find_by(name: '歴史') },
+
+  { id: 31, island: Island.find_by(name: '竹富島'), tag: Tag.find_by(name: '海') },
+  { id: 32, island: Island.find_by(name: '竹富島'), tag: Tag.find_by(name: '芸術') },
+  { id: 33, island: Island.find_by(name: '竹富島'), tag: Tag.find_by(name: 'のんびり') },
+  { id: 34, island: Island.find_by(name: '竹富島'), tag: Tag.find_by(name: '玄人') },
+  { id: 35, island: Island.find_by(name: '竹富島'), tag: Tag.find_by(name: '動物') },
+
+  { id: 36, island: Island.find_by(name: '青ヶ島'), tag: Tag.find_by(name: '森') },
+  { id: 37, island: Island.find_by(name: '青ヶ島'), tag: Tag.find_by(name: '廃墟') },
+  { id: 38, island: Island.find_by(name: '青ヶ島'), tag: Tag.find_by(name: 'アクティビティ') },
+  { id: 39, island: Island.find_by(name: '青ヶ島'), tag: Tag.find_by(name: '玄人') },
+  { id: 40, island: Island.find_by(name: '青ヶ島'), tag: Tag.find_by(name: '動物') },
+
+  { id: 41, island: Island.find_by(name: '軍艦島(端島)'), tag: Tag.find_by(name: '海') },
+  { id: 42, island: Island.find_by(name: '軍艦島(端島)'), tag: Tag.find_by(name: '廃墟') },
+  { id: 43, island: Island.find_by(name: '軍艦島(端島)'), tag: Tag.find_by(name: 'のんびり') },
+  { id: 44, island: Island.find_by(name: '軍艦島(端島)'), tag: Tag.find_by(name: '初心者') },
+  { id: 45, island: Island.find_by(name: '軍艦島(端島)'), tag: Tag.find_by(name: '歴史') }
   )
