@@ -1,0 +1,6 @@
+.content_wrapper
+  .question-card#question
+    h2#question_title Q1.キレイな海と大自然で森林浴、どっちに行きたい？
+    h3 A:キレイな海 B:大自然で森林浴
+    = link_to 'A', shindan2_path(tag: { name: '海' }), controller: 'questions', action: 'shindan2', class: 'btn btn-a', id: 'button_a'
+    = link_to 'B', shindan2_path(tag: { name: '森' }), controller: 'questions', action: 'shindan2', class: 'btn btn-b', id: 'button_b'
