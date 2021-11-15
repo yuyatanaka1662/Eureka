@@ -71,25 +71,33 @@ Island.seed(:id,
 
   { id: 8,
     name: '竹富島',
-    description: '竹富島の説明',
-    information: '竹富島のinfo',
-    address: '沖縄県',
-    latitude: 1.1,
-    longitude: 1.2 },
+    description: '沖縄県の石垣島からフェリーで30分、高速船なら10分ほどのところにある「竹富島」。
+                  美しいビーチがいくつかあり、浜辺でのんびり海を眺めるのがおすすめ。
+                  また島内の集落は沖縄の原風景が残り、水牛車から眺めるも良し、のんびり散歩するも良し、島時間をゆっくり楽しんでみてはいかがでしょう。',
+    information: 'https://painusima.com/',
+    address: '〒907-1101 沖縄県八重山郡竹富町竹富',
+    latitude: 24.327560780629486,
+    longitude: 124.08910934031915 },
 
   { id: 9,
     name: '青ヶ島',
-    description: '青ヶ島の説明',
-    information: '青ヶ島のinfo',
-    address: '東京都',
-    latitude: 1.3,
-    longitude: 1.4 },
+    description: '東京都から遙か南、絶海の孤島「青ヶ島」。
+                  火山活動によって出来たカルデラの内側にさらに小さい火山がある二重火山の島です。
+                  圧倒的な大自然、夜には満天の星々。
+                  アクセスの難しさが逆に非日常感を掻き立てます。',
+    information: 'http://www.vill.aogashima.tokyo.jp/',
+    address: '〒100-1701 東京都青ヶ島村',
+    latitude: 32.457255152712044,
+    longitude: 139.76639808807693 },
 
   { id: 10,
     name: '軍艦島(端島)',
-    description: '軍艦島の説明',
-    information: '軍艦島のinfo',
-    address: '長崎県',
-    latitude: 1.5,
-    longitude: 1.6 }
+    description: '世界文化遺産として知名度を上げた長崎県の「軍艦島」。
+                  正式名称は「端島」と言い、鉄筋コンクリートが並ぶ外観が軍艦「土佐」に似ていることから軍艦島と呼ばれるようになりました。
+                  かつて炭鉱の島として栄え、最盛期には世界最大の人口密度を誇り、現在でもこの記録は破られていません。
+                  上陸するにはツアーを利用する必要があり、立ち入れるエリアは制限されていますが、廃墟好きならもちろんのこと、そうでない方も一見の価値ありです。',
+    information: 'http://gunkanjima-nagasaki.jp/',
+    address: '〒851-1315 長崎県長崎市高島町',
+    latitude: 32.627776424108845,
+    longitude: 129.73854811251877 }
   )
