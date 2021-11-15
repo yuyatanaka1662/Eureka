@@ -1,9 +1,6 @@
 class ResultsController < ApplicationController
   def results
-    # binding.pry
-    session[:answer] << params[:tag][:name]
-    # binding.pry
-    @islands = Island.all
-    # binding.pry
+    add_answer_to_session
+    @shuffled_islands = Island.all.shuffle
   end
 end
