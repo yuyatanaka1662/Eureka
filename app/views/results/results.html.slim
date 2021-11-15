@@ -1,12 +1,17 @@
 .content_wrapper
   h3.results あなたにおすすめの島は…
-  - @islands.shuffle.first(3).each do |island|
+
+  - count = 0
+  - @shuffled_islands.each do |island|
     - if (island.tags.pluck(:name) & session[:answer]).count >= 3
-      h3
+      - count += 1
+      h2
         = island.name
       p
         = island.description
         br
-        = island.information
+        = link_to "#{island.name}info", island.information, target: :_blank
+    - break if count == 3
+
   .retry-button
     = link_to 'もう一度探す', shindan1_path, class: 'btn btn-diagnosis'
