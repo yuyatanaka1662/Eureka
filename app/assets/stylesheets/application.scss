@@ -22,11 +22,29 @@ html {
 body {
   height: 100%;
   background-color: #F4F4E9;
+  color: #333;
+}
+
+p {
+  font-weight: bold;
+  color: #333;
 }
 
 .content_wrapper {
   height: 100%;
   text-align: center;
+  background-image: image-url('island_image.jpeg');
+  background-size: cover;
+}
+
+.content_wrapper::before {
+  content: '';
+  background-color: rgba(200, 200, 200, 0.2);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
 }
 
 .container {
@@ -34,12 +52,17 @@ body {
 }
 
 .service-name {
-  margin-top: 10px;
+  padding-top: 10px;
+  color: white;
+  padding-top: 200px;
+  padding-bottom: 50px;
 }
 
 .header {
-  padding: 10px;
-  background-color: #fff;
+  padding: 20px;
+  // background-color: #eee;
+  position: absolute;
+  width: 100%;
 }
 
 .header-logo {
@@ -48,16 +71,25 @@ body {
 
 .footer {
   text-align: center;
-  padding-top: 10px;
-  background-color: #fff;
+  padding: 70px 70px;
+  background-color: #888;
 }
 
 .footer-item {
   margin: 10px;
+  font-size: 15px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-item:hover {
+  color: #ccc;
 }
 
 .copyright {
   font-size: 13px;
+  margin-top: 10px;
+  color: white;
 }
 
 .question-card {
