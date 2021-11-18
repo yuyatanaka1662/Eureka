@@ -48,25 +48,32 @@ p {
 }
 
 .container {
-  line-height: 40px;
+  line-height: 80px;
 }
 
 .service-name {
-  padding-top: 10px;
   color: white;
   padding-top: 200px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
+  font-size: 50px;
+  letter-spacing: 20px;
+  text-indent: 20px;
 }
 
 .header {
   padding: 20px;
-  // background-color: #eee;
-  position: absolute;
+  background-color: #eee;
+  position: fixed;
   width: 100%;
 }
 
-.header-logo {
-  margin-bottom: 0;
+.logo {
+  text-decoration: none;
+  color: black;
+}
+
+.logo:hover {
+  color: black;
 }
 
 .footer {
