@@ -1,17 +1,29 @@
-.content_wrapper
+.result_wrapper
   h3.results あなたにおすすめの島は…
-
-  - count = 0
-  - @shuffled_islands.each do |island|
-    - if (island.tags.pluck(:name) & session[:answer]).count >= 3
-      - count += 1
-      h2
-        = island.name
-      p
-        = island.description
-        br
-        = link_to "#{island.name}info", island.information, target: :_blank
-    - break if count == 3
-
+  .result_area
+    .result_islands
+      - count = 0
+      - @shuffled_islands.each do |island|
+        - if (island.tags.pluck(:name) & session[:answer]).count >= 3
+          - count += 1
+          .island_image
+            / = image_tag island.image, width: '100%', height: '100%', alt: "#{island.name}の画像"
+            - if island.image.attached?
+              = image_tag island.image, width: '100%', height: '100%'
+            - else
+              = image_tag ('bg_image.jpeg'), width: '100%', height: '100%'
+          .island_description
+            .island_place
+              h2.island_name
+                = island.name
+              h5.island_prefecture
+                = "(#{island.prefecture})"
+            p.island_introduce
+              = island.description
+            .island_information
+              = link_to island.information, target: :_blank, class: 'btn btn-outline-dark' do
+                span
+                  = "#{island.name}info"
+        - break if count == 1
   .retry-button
     = link_to 'もう一度探す', root_path, class: 'btn btn-diagnosis'
