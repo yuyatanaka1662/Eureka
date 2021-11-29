@@ -57,5 +57,29 @@ IslandTag.seed(:id,
   { id: 47, island: Island.find_by(name: '軍艦島(端島)'), tag: Tag.find_by(name: '廃墟') },
   { id: 48, island: Island.find_by(name: '軍艦島(端島)'), tag: Tag.find_by(name: 'のんびり') },
   { id: 49, island: Island.find_by(name: '軍艦島(端島)'), tag: Tag.find_by(name: '初心者') },
-  { id: 50, island: Island.find_by(name: '軍艦島(端島)'), tag: Tag.find_by(name: '歴史') }
+  { id: 50, island: Island.find_by(name: '軍艦島(端島)'), tag: Tag.find_by(name: '歴史') },
+
+  { id: 51, island: Island.find_by(name: '礼文島'), tag: Tag.find_by(name: '森') },
+  { id: 52, island: Island.find_by(name: '礼文島'), tag: Tag.find_by(name: '芸術') },
+  { id: 53, island: Island.find_by(name: '礼文島'), tag: Tag.find_by(name: 'のんびり') },
+  { id: 54, island: Island.find_by(name: '礼文島'), tag: Tag.find_by(name: '初心者') },
+  { id: 55, island: Island.find_by(name: '礼文島'), tag: Tag.find_by(name: '動物') },
+
+  { id: 56, island: Island.find_by(name: '波照間島'), tag: Tag.find_by(name: '海') },
+  { id: 57, island: Island.find_by(name: '波照間島'), tag: Tag.find_by(name: '廃墟') },
+  { id: 58, island: Island.find_by(name: '波照間島'), tag: Tag.find_by(name: 'のんびり') },
+  { id: 59, island: Island.find_by(name: '波照間島'), tag: Tag.find_by(name: '玄人') },
+  { id: 60, island: Island.find_by(name: '波照間島'), tag: Tag.find_by(name: '動物') },
+
+  { id: 61, island: Island.find_by(name: '田代島'), tag: Tag.find_by(name: '海') },
+  { id: 62, island: Island.find_by(name: '田代島'), tag: Tag.find_by(name: '廃墟') },
+  { id: 63, island: Island.find_by(name: '田代島'), tag: Tag.find_by(name: 'のんびり') },
+  { id: 64, island: Island.find_by(name: '田代島'), tag: Tag.find_by(name: '初心者') },
+  { id: 65, island: Island.find_by(name: '田代島'), tag: Tag.find_by(name: '動物') },
+
+  { id: 66, island: Island.find_by(name: '仙酔島'), tag: Tag.find_by(name: '海') },
+  { id: 67, island: Island.find_by(name: '仙酔島'), tag: Tag.find_by(name: '芸術') },
+  { id: 68, island: Island.find_by(name: '仙酔島'), tag: Tag.find_by(name: 'のんびり') },
+  { id: 69, island: Island.find_by(name: '仙酔島'), tag: Tag.find_by(name: '初心者') },
+  { id: 70, island: Island.find_by(name: '仙酔島'), tag: Tag.find_by(name: '歴史') }
   )
