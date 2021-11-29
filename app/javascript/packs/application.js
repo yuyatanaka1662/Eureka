@@ -9,8 +9,9 @@ require("@rails/activestorage").start()
 require("channels")
 require("jquery")
 require('bootstrap/dist/js/bootstrap.min.js')
-import './questions/question1'
-import './questions/question2'
+import './buttons/buttons'
+import './questions/questions'
+import './results/results'
 import './modals/terms'
 import './modals/privacy_policy'
 
