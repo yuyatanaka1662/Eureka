@@ -3,15 +3,38 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 .btn-diagnosis {
-  color: white;
-  background-color: #FF88FF;
-  font-weight: bold;
-  transition: .3s;
-  text-decoration: none;
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  transition: all .3s ease;
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+  background-color: #202f55;
+  // background-color: darkorange;
+  overflow: hidden;
+  border: none;
+  border-radius: 2px;
 }
 
 .btn-diagnosis:hover {
-  color: white;
-  background-color: #FF66FF;
-  transform: scale(1.1);
+  color: #fff;
+  border: none;
+}
+
+.btn-diagnosis:hover:after {
+  height: 100%;
+}
+
+.btn-diagnosis:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all .3s ease;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: #165e83;
+  // background-color: orangered;
 }

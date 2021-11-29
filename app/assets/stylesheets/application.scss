@@ -15,6 +15,13 @@
  *= require_self
  */
 
+* {
+  // フォント案1
+  // font-family: 'Kiwi Maru', serif;
+  // フォント案2
+  font-family: 'Kosugi', sans-serif;
+  }
+
 html {
   height: 100%;
 }
@@ -27,24 +34,24 @@ body {
 
 p {
   font-weight: bold;
-  color: #333;
+  color: #444;
+  text-shadow: 1px 1px 0 #eee
 }
 
 .content_wrapper {
   height: 100%;
+  padding-top: 100px;
   text-align: center;
-  background-image: image-url('island_image.jpeg');
+  background-image: image-url('bg_image.jpeg');
   background-size: cover;
+  position: relative;
+  filter: opacity(90%);
 }
 
-.content_wrapper::before {
-  content: '';
-  background-color: rgba(200, 200, 200, 0.2);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: block;
-  pointer-events: none;
+.result_wrapper {
+  background-color: #f4f5f7;
+  text-align: center;
+  padding-bottom: 50px;
 }
 
 .container {
@@ -52,9 +59,8 @@ p {
 }
 
 .service-name {
-  color: white;
-  padding-top: 200px;
-  padding-bottom: 20px;
+  color: #fff;
+  padding: 130px 0 20px 0;
   font-size: 50px;
   letter-spacing: 20px;
   text-indent: 20px;
@@ -62,50 +68,108 @@ p {
 
 .header {
   padding: 20px;
-  background-color: #eee;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
 .logo {
   text-decoration: none;
-  color: black;
+  color: #eee;
+  font-weight: bold;
 }
 
 .logo:hover {
-  color: black;
+  color: #fff;
 }
 
 .footer {
   text-align: center;
-  padding: 70px 70px;
-  background-color: #888;
+  padding: 70px;
+  background-color: #F4F4E9;
 }
 
 .footer-item {
   margin: 10px;
   font-size: 15px;
-  color: #ccc;
+  color: #888;
   text-decoration: none;
 }
 
 .footer-item:hover {
-  color: #ccc;
+  color: #444;
 }
 
 .copyright {
   font-size: 13px;
   margin-top: 10px;
-  color: white;
+  color: #444;
+}
+
+.question_wrapper {
+  display: none;
 }
 
 .question-card {
+  background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
-  padding-top: 10px;
+  padding: 120px 0;
+  margin: 0 150px;
+  border-radius: 2px;
+}
+
+.question-title {
+  padding-bottom: 40px;
+}
+
+.choice-b {
+  margin-bottom: 30px;
 }
 
 .results {
   text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.result_area {
+  display: none;
+}
+
+.result_islands {
+display: flex;
+height: 500px;
+padding: 0 50px;
+margin-bottom: 25px;
+}
+
+.island_image {
+  width: 60%;
+}
+
+.island_description {
+  width: 40%;
+  padding: 60px;
+  background-color: rgba(255,255,255,0.7);
+  text-align: left;
+}
+
+.island_place {
+  display: flex;
+  border-bottom: 2px solid #000;
+}
+
+.island_prefecture {
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+.island_introduce {
+  margin-top: 5px;
+}
+
+.retry-button {
+  padding-top: 25px;
 }
 
 .modal {
@@ -131,4 +195,61 @@ p {
   top: 50%;
   transform: translate(-50%,-50%);
   width: 60%;
+}
+
+.btn-outline-dark {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.btn-outline-dark span {
+  position: relative;
+  transition: .3s;
+}
+
+.btn-outline-dark:hover span {
+  color: #fff;
+}
+
+.btn-outline-dark:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  transform: translate3d(-100%, 0, 0);
+  transition: .3s;
+}
+
+.btn-outline-dark:hover:before {
+  transform: translate3d(0, 0, 0);
+}
+
+.ship_progression {
+  margin-top: 60px;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.ferry_icon img {
+  width: 40px;
+  height: 40px;
+  transform: scale(-1, 1);
+  position: relative;
+  top: -5px;
+}
+
+.wave_icon img {
+  width: 30px;
+  height: 30px;
+  margin-top: 8px;
+}
+
+.number_icon img {
+  width: 30px;
+  height: 30px;
 }

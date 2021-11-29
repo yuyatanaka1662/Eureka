@@ -4,33 +4,35 @@
 
 .btn-a {
   color: white;
-  background-color: deepskyblue;
+  background-color: lightseagreen;
   font-weight: bold;
   transition: .3s;
   text-decoration: none;
-  padding-right: 30px;
-  padding-left: 30px;
-  margin-right: 30px;
+  padding-right: 40px;
+  padding-left: 40px;
+  margin-right: 50px;
+  border-radius: 2px;
 }
 
 .btn-a:hover {
   color: white;
-  background-color: dodgerblue;
+  background-color: darkturquoise;
   transform: scale(1.1);
 }
 
 .btn-b {
   color: white;
-  background-color: orange;
+  background-color: indianred;
   font-weight: bold;
   transition: .3s;
   text-decoration: none;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 40px;
+  padding-left: 40px;
+  border-radius: 2px;
 }
 
 .btn-b:hover {
   color: white;
-  background-color: darkorange;
+  background-color: mediumvioletred;
   transform: scale(1.1);
 }
