@@ -2,10 +2,14 @@
   h1.service-name シマサガシ
   .container
     p
-      | 次の旅行はどこに行こう？
-      br
-      | そんなあなたにぴったりな「島」を提案します！
-      br
-      | 自分に合ったまだ見ぬ島を探してみませんか？
-      br
-      = link_to '探す！', shindan1_path, class: 'btn btn-diagnosis'
+      | 「島」、行ってみたくない？
+      / | 次の旅行はどこに行こう？
+      / br
+      / | そんなあなたにぴったりな「島」を提案します！
+      / br
+      / | 自分に合ったまだ見ぬ島を探してみませんか？
+      / br
+    = link_to shindan1_path, class: 'btn btn-diagnosis', id: 'btn-diagnosis-top' do
+      | 行く
+      span.question_mark
+        | ？

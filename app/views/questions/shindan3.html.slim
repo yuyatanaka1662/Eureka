@@ -1,6 +1,28 @@
 .content_wrapper
   .question-card#question
-    h2#question_title Q3.のんびり過ごしたい？アクティビティで遊びたい?
-    h3 A:のんびり or B:アクティビティ
+    / h2.question-title Q3.どっち?
+    h3.choice-a A:予定を決めずのんびり街歩き
+    p
+      | or
+    h3.choice-b B:アクティビティでとことん遊ぶ
     = link_to 'A', shindan4_path(tag: { name: 'のんびり' }), class: 'btn btn-a', id: 'button_a'
     = link_to 'B', shindan4_path(tag: { name: 'アクティビティ' }), class: 'btn btn-b', id: 'button_b'
+    .ship_progression
+      .number_icon
+        = image_tag 'number_1.png'
+      .wave_icon
+        = image_tag 'wave_icon.png'
+      .number_icon
+        = image_tag 'number_2.png'
+      .wave_icon
+        = image_tag 'wave_icon.png'
+      .ferry_icon
+        = image_tag 'ferry_icon.png'
+      .wave_icon
+        = image_tag 'wave_icon.png'
+      .number_icon
+        = image_tag 'number_4.png'
+      .wave_icon
+        = image_tag 'wave_icon.png'
+      .number_icon
+        = image_tag 'number_5.png'

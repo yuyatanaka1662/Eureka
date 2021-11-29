@@ -1,7 +1,28 @@
 .content_wrapper
   .question-card#question
-    h2#question_title Q2.廃墟と芸術どっちに心惹かれる？
-    h3 A:廃墟 or B:芸術
+    / h2.question-title Q2.どっち？
+    h3.choice-a A:廃墟を訪れてノスタルジーな気分に浸りたい
+    p
+      | or
+    h3.choice-b B:芸術に触れて感性を磨きたい
     = link_to 'A', shindan3_path(tag: { name: '廃墟' }), class: 'btn btn-a', id: 'button_a'
     = link_to 'B', shindan3_path(tag: { name: '芸術' }), class: 'btn btn-b', id: 'button_b'
-
+    .ship_progression
+      .number_icon
+        = image_tag 'number_1.png'
+      .wave_icon
+        = image_tag 'wave_icon.png'
+      .ferry_icon
+        = image_tag 'ferry_icon.png'
+      .wave_icon
+        = image_tag 'wave_icon.png'
+      .number_icon
+        = image_tag 'number_3.png'
+      .wave_icon
+        = image_tag 'wave_icon.png'
+      .number_icon
+        = image_tag 'number_4.png'
+      .wave_icon
+        = image_tag 'wave_icon.png'
+      .number_icon
+        = image_tag 'number_5.png'
