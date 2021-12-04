@@ -2,20 +2,18 @@ doctype html
 html
   head
     title
-      | シマサガシ(仮)
+      | シマサガシ
+    meta[charset="utf-8"]
+    meta[name="viewport" content="width=device-width, initial-scale=1.0"]
+    / フォント
+    link[rel="preconnect" href="https://fonts.googleapis.com"]
+    link[rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""]
+    link[href="https://fonts.googleapis.com/css2?family=Kosugi&display=swap" rel="stylesheet"]
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
-    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
-    // フォント案1
-    / <link rel="preconnect" href="https://fonts.googleapis.com">
-    / <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    / <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
-    // フォント案2
-    link rel="preconnect" href="https://fonts.googleapis.com"
-    link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""
-    link href="https://fonts.googleapis.com/css2?family=Kosugi&display=swap" rel="stylesheet"
-      body
+  body
     = render 'shared/header'
     = yield
     = render 'shared/footer'
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'

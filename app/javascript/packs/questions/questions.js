@@ -1,5 +1,5 @@
 document.addEventListener('turbolinks:load', () => {
   $(function() {
-    $('.question_wrapper').fadeIn(600);
+    $('.question-wrapper').fadeIn(600);
   });
 });
