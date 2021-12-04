@@ -1,28 +1,29 @@
-.content_wrapper
-  .question-card#question
-    / h2.question-title Q4.どっち？
-    h3.choice-a A:島には何度も行ったことがある
-    p
-      | or
-    h3.choice-b B:島初心者です
-    = link_to 'A', shindan5_path(tag: { name: '玄人' }), class: 'btn btn-a', id: 'button_a'
-    = link_to 'B', shindan5_path(tag: { name: '初心者' }), class: 'btn btn-b', id: 'button_b'
-    .ship_progression
-      .number_icon
-        = image_tag 'number_1.png'
-      .wave_icon
-        = image_tag 'wave_icon.png'
-      .number_icon
-        = image_tag 'number_2.png'
-      .wave_icon
-        = image_tag 'wave_icon.png'
-      .number_icon
-        = image_tag 'number_3.png'
-      .wave_icon
-        = image_tag 'wave_icon.png'
-      .ferry_icon
-        = image_tag 'ferry_icon.png'
-      .wave_icon
-        = image_tag 'wave_icon.png'
-      .number_icon
-        = image_tag 'number_5.png'
+.content-wrapper
+  .question-card
+    .choices
+      h3 A:島には何度も行ったことがある
+      p
+        | or
+      h3 B:島初心者です
+    .choice-button-area
+      = link_to 'A', shindan5_path(tag: { name: '玄人' }), class: 'btn btn-a', id: 'button-a'
+      = link_to 'B', shindan5_path(tag: { name: '初心者' }), class: 'btn btn-b', id: 'button-b'
+    .ship-progression
+      .number-icon
+        = image_tag 'icons/number_1_icon.png'
+      .wave-icon
+        = image_tag 'icons/wave_icon.png'
+      .number-icon
+        = image_tag 'icons/number_2_icon.png'
+      .wave-icon
+        = image_tag 'icons/wave_icon.png'
+      .number-icon
+        = image_tag 'icons/number_3_icon.png'
+      .wave-icon
+        = image_tag 'icons/wave_icon.png'
+      .ferry-icon
+        = image_tag 'icons/ferry_icon.png'
+      .wave-icon
+        = image_tag 'icons/wave_icon.png'
+      .number-icon
+        = image_tag 'icons/number_5_icon.png'

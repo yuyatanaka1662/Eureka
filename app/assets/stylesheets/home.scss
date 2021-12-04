@@ -1,20 +1,45 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+.container {
+  p {
+    padding: 5rem 0;
+  }
+}
 
+.service-name {
+  font-size: 5rem;
+  color: #fff;
+  padding-top: 8rem;
+  letter-spacing: 1rem;
+  text-indent: 1rem;
+  @media (max-width: 425px) {
+    font-size: 3rem;
+    padding: 3rem 0 1rem;
+  }
+}
+
+// 「行く！」「もう一度探す」ボタン
 .btn-diagnosis {
-  width: 130px;
-  height: 40px;
+  font-size: 1.6rem;
+  padding: 1rem 4rem;
   color: #fff;
   transition: all .3s ease;
   position: relative;
   display: inline-block;
   z-index: 0;
-  background-color: #202f55;
-  // background-color: darkorange;
+  background-color: #0F435C;
   overflow: hidden;
   border: none;
   border-radius: 2px;
+  @media (max-width: 425px) {
+    font-size: 1.4rem;
+    padding: 1rem 3rem;
+    border-bottom: 5px solid #082634;
+  }
+}
+
+.btn-diagnosis:active {
+  @media (max-width: 425px) {
+    margin-top: 3px;
+  }
 }
 
 .btn-diagnosis:hover {
@@ -36,5 +61,20 @@
   height: 0;
   width: 100%;
   background-color: #165e83;
-  // background-color: orangered;
+  @media (max-width: 425px) {
+    background-color: #0F435C;
+  }
+}
+
+.question-mark {
+  @media (max-width: 425px) {
+    display: none;
+  }
+}
+
+.exclamation-mark {
+  display: none;
+  @media (max-width: 425px) {
+    display: inline-block;
+  }
 }

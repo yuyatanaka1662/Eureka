@@ -1,6 +1,6 @@
 document.addEventListener('turbolinks:load', () => {
   $(function() {
-    $('#btn-diagnosis-top').click(
+    $('#btn-diagnosis-top').hover(
       function() {$(this).text('行く！')},
       function() {$(this).text('行く？')
     });

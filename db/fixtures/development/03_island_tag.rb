@@ -81,5 +81,23 @@ IslandTag.seed(:id,
   { id: 67, island: Island.find_by(name: '仙酔島'), tag: Tag.find_by(name: '芸術') },
   { id: 68, island: Island.find_by(name: '仙酔島'), tag: Tag.find_by(name: 'のんびり') },
   { id: 69, island: Island.find_by(name: '仙酔島'), tag: Tag.find_by(name: '初心者') },
-  { id: 70, island: Island.find_by(name: '仙酔島'), tag: Tag.find_by(name: '歴史') }
+  { id: 70, island: Island.find_by(name: '仙酔島'), tag: Tag.find_by(name: '歴史') },
+
+  { id: 71, island: Island.find_by(name: '石垣島'), tag: Tag.find_by(name: '海') },
+  { id: 72, island: Island.find_by(name: '石垣島'), tag: Tag.find_by(name: '芸術') },
+  { id: 73, island: Island.find_by(name: '石垣島'), tag: Tag.find_by(name: 'アクティビティ') },
+  { id: 74, island: Island.find_by(name: '石垣島'), tag: Tag.find_by(name: '初心者') },
+  { id: 75, island: Island.find_by(name: '石垣島'), tag: Tag.find_by(name: '動物') },
+
+  { id: 76, island: Island.find_by(name: '佐渡島'), tag: Tag.find_by(name: '海') },
+  { id: 77, island: Island.find_by(name: '佐渡島'), tag: Tag.find_by(name: '廃墟') },
+  { id: 78, island: Island.find_by(name: '佐渡島'), tag: Tag.find_by(name: 'アクティビティ') },
+  { id: 79, island: Island.find_by(name: '佐渡島'), tag: Tag.find_by(name: '玄人') },
+  { id: 80, island: Island.find_by(name: '佐渡島'), tag: Tag.find_by(name: '動物') },
+
+  { id: 81, island: Island.find_by(name: '奄美大島'), tag: Tag.find_by(name: '森') },
+  { id: 82, island: Island.find_by(name: '奄美大島'), tag: Tag.find_by(name: '芸術') },
+  { id: 83, island: Island.find_by(name: '奄美大島'), tag: Tag.find_by(name: 'アクティビティ') },
+  { id: 84, island: Island.find_by(name: '奄美大島'), tag: Tag.find_by(name: '玄人') },
+  { id: 85, island: Island.find_by(name: '奄美大島'), tag: Tag.find_by(name: '動物') }
   )
