@@ -1,3 +1,7 @@
 .header
   .logo
-    = link_to 'シマサガシ', root_path, class: 'logo'
+    = link_to root_path do
+      - if controller_name == 'results'
+        = image_tag 'logos/logo-name-gray.png', class: 'logo-header'
+      - else
+        = image_tag 'logos/logo-name-white.png', class: 'logo-header'
