@@ -99,5 +99,11 @@ IslandTag.seed(:id,
   { id: 82, island: Island.find_by(name: '奄美大島'), tag: Tag.find_by(name: '芸術') },
   { id: 83, island: Island.find_by(name: '奄美大島'), tag: Tag.find_by(name: 'アクティビティ') },
   { id: 84, island: Island.find_by(name: '奄美大島'), tag: Tag.find_by(name: '玄人') },
-  { id: 85, island: Island.find_by(name: '奄美大島'), tag: Tag.find_by(name: '動物') }
+  { id: 85, island: Island.find_by(name: '奄美大島'), tag: Tag.find_by(name: '動物') },
+
+  { id: 86, island: Island.find_by(name: '西表島'), tag: Tag.find_by(name: '森') },
+  { id: 87, island: Island.find_by(name: '西表島'), tag: Tag.find_by(name: '芸術') },
+  { id: 88, island: Island.find_by(name: '西表島'), tag: Tag.find_by(name: 'アクティビティ') },
+  { id: 89, island: Island.find_by(name: '西表島'), tag: Tag.find_by(name: '玄人') },
+  { id: 90, island: Island.find_by(name: '西表島'), tag: Tag.find_by(name: '動物') }
   )
