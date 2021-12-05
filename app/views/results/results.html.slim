@@ -20,7 +20,6 @@
                 = "(#{island.prefecture})"
             p.island-description
               = island.description
-              / = Island.find_by(name: '石垣島').description
             .island-information
               = link_to island.information, target: :_blank, class: 'btn btn-outline-dark' do
                 span

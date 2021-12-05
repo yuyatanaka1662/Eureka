@@ -60,17 +60,13 @@ p {
   }
 }
 
-.logo {
-  font-size: 1.6rem;
-  text-decoration: none;
-  color: #eee;
+.logo-header {
+  width: 10rem;
+  height: 2rem;
   @media (max-width: 425px) {
-    font-size: 1rem;
+    width: 7rem;
+    height: 1.5rem;
   }
-}
-
-.logo:hover {
-  color: #fff;
 }
 
 // フッター
