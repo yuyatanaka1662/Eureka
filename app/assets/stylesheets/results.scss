@@ -86,13 +86,14 @@
   position: relative;
   overflow: hidden;
   border-radius: 0;
+  vertical-align: top;
   @media (max-width: 425px) {
     border-bottom: 5px solid #000;
   }
 }
 
 .btn-outline-dark:active {
-  @media (max-width:425px) {
+  @media (max-width: 425px) {
     margin-top: 3px;
     border-bottom: 2px solid #000;
   }
@@ -105,7 +106,7 @@
 
 .btn-outline-dark:hover span {
   color: #fff;
-  @media (max-width:425px) {
+  @media (max-width: 425px) {
     color: black;
   }
 }
@@ -120,7 +121,7 @@
   background: #333;
   transform: translate3d(-100%, 0, 0);
   transition: .3s;
-  @media (max-width:425px) {
+  @media (max-width: 425px) {
     background-color: white;
     transform: none;
   }
@@ -133,4 +134,14 @@
 .retry-button {
   text-align: center;
   padding-bottom: 3rem;
+}
+
+.boy-and-girl {
+  width: 30%;
+  height: 30%;
+  margin-left: 60%;
+  @media (max-width: 425px) {
+    width: 20%;
+    height: 20%;
+  }
 }
