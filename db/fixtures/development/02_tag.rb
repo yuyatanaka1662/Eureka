@@ -1,6 +1,6 @@
 Tag.seed(:id,
   { id: 1, name: '海' },
-  { id: 2, name: '森' },
+  { id: 2, name: 'トレッキング' },
   { id: 3, name: '廃墟' },
   { id: 4, name: '芸術' },
   { id: 5, name: 'のんびり' },

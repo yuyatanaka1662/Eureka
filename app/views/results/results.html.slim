@@ -24,6 +24,7 @@
               = link_to island.information, target: :_blank, class: 'btn btn-outline-dark' do
                 span
                   = "#{island.name}info"
+              = image_tag 'logos/boy-and-girl-gray.png', class: 'boy-and-girl'
         - break if count == 1
   .retry-button
     = link_to 'もう一度探す', root_path, class: 'btn btn-diagnosis'

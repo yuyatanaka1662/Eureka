@@ -110,8 +110,10 @@
 }
 
 .foundation {
-  width: 60rem;
-  height: 20rem;
+  // width: 40rem;
+  // height: 20rem;
+  width: 30%;
+  height: 30%;
   @media (max-width: 425px) {
     width: 25rem;
     height: 10rem;
