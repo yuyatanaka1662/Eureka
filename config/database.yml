@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: Eureka_production
+  database: heroku_c8d547c12d6a5f6
   username: Eureka
   password: <%= ENV['EUREKA_DATABASE_PASSWORD'] %>
