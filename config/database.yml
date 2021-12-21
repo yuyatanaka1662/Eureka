@@ -49,7 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: Eureka_development
+  database: Eureka_production
   username: Eureka
   password: <%= ENV['EUREKA_DATABASE_PASSWORD'] %>
-  # url: <%= ENV['DATABASE_URL'] %>
