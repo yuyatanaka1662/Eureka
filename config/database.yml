@@ -52,3 +52,4 @@ production:
   database: Eureka_production
   username: Eureka
   password: <%= ENV['EUREKA_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
