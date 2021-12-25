@@ -7,11 +7,11 @@
         - if (island.tags.pluck(:name) & session[:answer]).count >= 3
           - count += 1
           .island-image
-            / = image_tag island.image, width: '100%', height: '100%', alt: "#{island.name}の画像"
-            - if island.image.attached?
-              = image_tag island.image, width: '100%', height: '100%', alt: "#{island.name}の画像"
-            - else
-              = image_tag 'bg_image.jpeg', width: '100%', height: '100%', alt: "#{island.name}の画像"
+            = image_tag island.image, width: '100%', height: '100%', alt: "#{island.name}の画像"
+            / - if island.image.attached?
+            /   = image_tag island.image, width: '100%', height: '100%', alt: "#{island.name}の画像"
+            / - else
+            /   = image_tag 'bg_image.jpeg', width: '100%', height: '100%', alt: "#{island.name}の画像"
           .island-introduce
             .island-location
               h2.island-name
