@@ -6,7 +6,9 @@ Island.seed(:id,
     address: '〒640-0102 和歌山県和歌山市深山',
     latitude: 34.28217309472821,
     longitude: 135.01270774795321,
-    prefecture: '和歌山県' },
+    prefecture: '和歌山県',
+    image: ActiveStorage::Blob.create_and_upload!(io: File.open(Rails.root.join("app/assets/images/islands/tomogashima.jpeg")), filename: 'tomogashima.jpeg')
+  },
 
   { id: 2,
     name: '屋久島',
