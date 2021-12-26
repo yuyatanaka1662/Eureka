@@ -7,7 +7,7 @@ Island.seed(:id,
     latitude: 34.28217309472821,
     longitude: 135.01270774795321,
     prefecture: '和歌山県',
-    image: ActiveStorage::Blob.create_and_upload!(io: File.open(Rails.root.join('public/assets/islands/tomogashima-3f6e8dd7733ccefe1d7d88430e5b6865464249c51dc7c646fdf3101d6840dddd.jpg')), filename: 'tomogashima-3f6e8dd7733ccefe1d7d88430e5b6865464249c51dc7c646fdf3101d6840dddd.jpg')
+    image: ActiveStorage::Blob.create_and_upload!(io: File.open(Rails.root.join('assets/islands/tomogashima-3f6e8dd7733ccefe1d7d88430e5b6865464249c51dc7c646fdf3101d6840dddd.jpg')), filename: 'tomogashima-3f6e8dd7733ccefe1d7d88430e5b6865464249c51dc7c646fdf3101d6840dddd.jpg')
   },
 
   { id: 2,
