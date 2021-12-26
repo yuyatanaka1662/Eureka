@@ -18,7 +18,8 @@ Island.seed(:id,
     latitude: 30.369490703058574,
     longitude: 130.53118928396322,
     prefecture: '鹿児島県',
-    image: ActiveStorage::Blob.create_and_upload!(io: File.open('public/assets/islands/yakushima-fd2d961226196cb02081cdd28e7761c6b35417ab38dce0278e7aa0623fad45f2.jpg'), filename: 'yakushima-fd2d961226196cb02081cdd28e7761c6b35417ab38dce0278e7aa0623fad45f2.jpg')},
+    image: ActiveStorage::Blob.create_and_upload!(io: File.open('public/assets/islands/yakushima-fd2d961226196cb02081cdd28e7761c6b35417ab38dce0278e7aa0623fad45f2.jpg'), filename: 'yakushima-fd2d961226196cb02081cdd28e7761c6b35417ab38dce0278e7aa0623fad45f2.jpg')
+  },
 
   { id: 3,
     name: '池島',
@@ -27,7 +28,9 @@ Island.seed(:id,
     address: '〒857-0071 長崎県長崎市池島町',
     latitude: 32.885265759271725,
     longitude: 129.59892805747407,
-    prefecture: '長崎県' },
+    prefecture: '長崎県',
+    image: ActiveStorage::Blob.create_and_upload!(io: File.open('public/assets/islands/ikeshima-541c71337f7474041cad65306167f6698ad9c95058ee78e1b0d56cbb50cae9a3.jpg'), filename: 'ikeshima-541c71337f7474041cad65306167f6698ad9c95058ee78e1b0d56cbb50cae9a3.jpg')
+  },
 
   { id: 4,
     name: '犬島',
@@ -36,7 +39,9 @@ Island.seed(:id,
     address: '〒704-8153 岡山県岡山市東区犬島',
     latitude: 34.5634974718975,
     longitude: 134.10203146631451,
-    prefecture: '岡山県' },
+    prefecture: '岡山県',
+    image: ActiveStorage::Blob.create_and_upload!(io: File.open('public/assets/islands/inujima-ce0da23ee46d44755017fe9428d541d1b056f0cc1e07dbbbbed68634ab662a80.jpg'), filename: 'inujima-ce0da23ee46d44755017fe9428d541d1b056f0cc1e07dbbbbed68634ab662a80.jpg')
+  },
 
   { id: 5,
     name: '沖島',
@@ -45,7 +50,9 @@ Island.seed(:id,
     address: '〒523-0801 滋賀県近江八幡市沖島町',
     latitude: 35.20784130851707,
     longitude: 136.06386906305482,
-    prefecture: '滋賀県' },
+    prefecture: '滋賀県',
+    image: ActiveStorage::Blob.create_and_upload!(io: File.open('public/assets/islands/okishima-450d618c066820abc87896de7a42d1d7da9983a33916586cbe65c6310c422af2.jpg'), filename: 'okishima-450d618c066820abc87896de7a42d1d7da9983a33916586cbe65c6310c422af2.jpg')
+  },
 
   { id: 6,
     name: '柏島',
@@ -54,7 +61,9 @@ Island.seed(:id,
     address: '〒788-0343 高知県幡多郡大月町柏島',
     latitude: 32.7695873708701,
     longitude: 132.62317229019834,
-    prefecture: '高知県' },
+    prefecture: '高知県',
+    image: ActiveStorage::Blob.create_and_upload!(io: File.open('public/assets/islands/kashiwajima-d0ad9faae24fa5f469c14831024d572b9a34f04a4f271b7e3cb6e6a523a5a1c9.jpg'), filename: 'kashiwajima-d0ad9faae24fa5f469c14831024d572b9a34f04a4f271b7e3cb6e6a523a5a1c9.jpg')
+  },
 
   { id: 7,
     name: '大久野島',
@@ -63,7 +72,9 @@ Island.seed(:id,
     address: '〒729-2311 広島県竹原市忠海町',
     latitude: 34.30940235311755,
     longitude: 132.99403629386188,
-    prefecture: '広島県' },
+    prefecture: '広島県',
+    image: ActiveStorage::Blob.create_and_upload!(io: File.open('public/assets/islands/ookunojima-77d04fb0848c44caf0cf6285ff6e57febc9e0e11ae5baab00aa2971a19dd32d9.jpg'), filename: 'ookunojima-77d04fb0848c44caf0cf6285ff6e57febc9e0e11ae5baab00aa2971a19dd32d9.jpg')
+  },
 
   { id: 8,
     name: '竹富島',
@@ -72,7 +83,9 @@ Island.seed(:id,
     address: '〒907-1101 沖縄県八重山郡竹富町竹富',
     latitude: 24.327560780629486,
     longitude: 124.08910934031915,
-    prefecture: '沖縄県' },
+    prefecture: '沖縄県',
+    image: ActiveStorage::Blob.create_and_upload!(io: File.open('public/assets/islands/taketomijima-add26d1b91086d51fec6af1c4e8534a99eba8fc690317dc9ed536d51448a65d1.jpg'), filename: 'taketomijima-add26d1b91086d51fec6af1c4e8534a99eba8fc690317dc9ed536d51448a65d1.jpg')
+  },
 
   { id: 9,
     name: '青ヶ島',
@@ -81,7 +94,9 @@ Island.seed(:id,
     address: '〒100-1701 東京都青ヶ島村',
     latitude: 32.457255152712044,
     longitude: 139.76639808807693,
-    prefecture: '東京都' },
+    prefecture: '東京都',
+    image: ActiveStorage::Blob.create_and_upload!(io: File.open('public/assets/islands/aogashima-ff4ee51a57613c363da8b19c73d373e0dac503592c119191c3a10bca7909916e.jpg'), filename: 'aogashima-ff4ee51a57613c363da8b19c73d373e0dac503592c119191c3a10bca7909916e.jpg')
+  },
 
   { id: 10,
     name: '軍艦島(端島)',
@@ -90,7 +105,9 @@ Island.seed(:id,
     address: '〒851-1315 長崎県長崎市高島町',
     latitude: 32.627776424108845,
     longitude: 129.73854811251877,
-    prefecture: '長崎県' },
+    prefecture: '長崎県',
+    image: ActiveStorage::Blob.create_and_upload!(io: File.open('public/assets/islands/gunkanjima-ece00e45052f07fa9f82a83a728fca3df89e089f696340d9df5a4de0c286b4c4.jpg'), filename: 'gunkanjima-ece00e45052f07fa9f82a83a728fca3df89e089f696340d9df5a4de0c286b4c4.jpg')
+  },
 
   { id: 11,
     name: '礼文島',
@@ -99,7 +116,8 @@ Island.seed(:id,
     address: '北海道礼文郡礼文町',
     latitude: 45.39426272202936 ,
     longitude: 141.0154314955487,
-    prefecture: '北海道'
+    prefecture: '北海道',
+    image: ActiveStorage::Blob.create_and_upload!(io: File.open('public/assets/islands/rebuntou-e73be8fde6c743320534cad2e1c911f49f151661aba581691a738ee08cc86f44.jpg'), filename: 'rebuntou-e73be8fde6c743320534cad2e1c911f49f151661aba581691a738ee08cc86f44.jpg')
   },
 
   {
@@ -110,7 +128,8 @@ Island.seed(:id,
     address: '〒907-1751 沖縄県八重山郡竹富町波照間',
     latitude: 24.0638195644427,
     longitude: 123.77983201500987,
-    prefecture: '沖縄県'
+    prefecture: '沖縄県',
+    image: ActiveStorage::Blob.create_and_upload!(io: File.open('public/assets/islands/haterumajima-4455e53fcd776c79a65e21542bfb6590ad75e8bc645484405bdb3a8b2c1ef525.jpg'), filename: 'haterumajima-4455e53fcd776c79a65e21542bfb6590ad75e8bc645484405bdb3a8b2c1ef525.jpg')
   },
 
   {
@@ -121,7 +140,8 @@ Island.seed(:id,
     address: '〒986-0023 宮城県石巻市田代浜',
     latitude: 38.29468955112608,
     longitude: 141.4164655872824,
-    prefecture: '宮城県'
+    prefecture: '宮城県',
+    image: ActiveStorage::Blob.create_and_upload!(io: File.open('public/assets/islands/tashirojima-963fc9d7073bd1b132643111bc315a3dd9e52d1d34457d257fab82abab608386.jpg'), filename: 'tashirojima-963fc9d7073bd1b132643111bc315a3dd9e52d1d34457d257fab82abab608386.jpg')
   },
 
   {
@@ -132,7 +152,8 @@ Island.seed(:id,
     address: '〒720-0202 広島県福山市鞆町後地',
     latitude: 34.38457075649066,
     longitude: 133.39583282114899,
-    prefecture: '広島県'
+    prefecture: '広島県',
+    image: ActiveStorage::Blob.create_and_upload!(io: File.open('public/assets/islands/sensuijima-4fd9a83c4a5f4c53ac02a043ff99c0f7e06cc6fda2d48b6a86b8014937b06477.jpg'), filename: 'sensuijima-4fd9a83c4a5f4c53ac02a043ff99c0f7e06cc6fda2d48b6a86b8014937b06477.jpg')
   },
 
   {
@@ -143,7 +164,8 @@ Island.seed(:id,
     address: '沖縄県石垣市',
     latitude: 24.411606550143595,
     longitude: 124.17615066325284,
-    prefecture: '沖縄県'
+    prefecture: '沖縄県',
+    image: ActiveStorage::Blob.create_and_upload!(io: File.open('public/assets/islands/ishigakijima-c30403016fa90b9d6cfb8839afacaeaa33bc2e4ce76921cc930743cd04b2d1b0.jpg'), filename: 'ishigakijima-c30403016fa90b9d6cfb8839afacaeaa33bc2e4ce76921cc930743cd04b2d1b0.jpg')
   },
 
   {
@@ -154,7 +176,8 @@ Island.seed(:id,
     address: '新潟県佐渡市',
     latitude: 38.050839541468555,
     longitude: 138.3369053708826,
-    prefecture: '新潟県'
+    prefecture: '新潟県',
+    image: ActiveStorage::Blob.create_and_upload!(io: File.open('public/assets/islands/sadogashima-29db5f1e0d6d647fbb6ae16279edd6b577d60338149169ac939fdd440ba63382.jpg'), filename: 'sadogashima-29db5f1e0d6d647fbb6ae16279edd6b577d60338149169ac939fdd440ba63382.jpg')
   },
 
   {
@@ -165,7 +188,8 @@ Island.seed(:id,
     address: '鹿児島県',
     latitude: 28.275800282984537,
     longitude: 129.36122637103827,
-    prefecture: '鹿児島県'
+    prefecture: '鹿児島県',
+    image: ActiveStorage::Blob.create_and_upload!(io: File.open('public/assets/islands/amamiooshima-a14e8b19c67fd3bdce418c031a6e9c2fe34cf6a75544ca99e6042d22414fc81e.jpg'), filename: 'amamiooshima-a14e8b19c67fd3bdce418c031a6e9c2fe34cf6a75544ca99e6042d22414fc81e.jpg')
   },
 
   {
@@ -176,7 +200,8 @@ Island.seed(:id,
     address: '沖縄県八重山郡竹富町西表',
     latitude: 24.333884469788714,
     longitude: 123.81920986264268,
-    prefecture: '沖縄県'
+    prefecture: '沖縄県',
+    image: ActiveStorage::Blob.create_and_upload!(io: File.open('public/assets/islands/iriomotejima-865988e5a233c19dd9e3ac02ac4c987dd3052b57642cb04abc1e2eeff6814f0e.jpg'), filename: 'iriomotejima-865988e5a233c19dd9e3ac02ac4c987dd3052b57642cb04abc1e2eeff6814f0e.jpg')
   },
 
   {
@@ -187,6 +212,7 @@ Island.seed(:id,
     address: '愛知県西尾市一色町佐久島',
     latitude: 34.729169844749826,
     longitude: 137.0400690663576,
-    prefecture: '愛知県'
+    prefecture: '愛知県',
+    image: ActiveStorage::Blob.create_and_upload!(io: File.open('public/assets/islands/sakushima-7cb5c8e4d320e3477ab50745145a3fa0a551fb9b8ce332e5c5d56d409f2a61cd.jpg'), filename: 'sakushima-7cb5c8e4d320e3477ab50745145a3fa0a551fb9b8ce332e5c5d56d409f2a61cd.jpg')
   }
   )
