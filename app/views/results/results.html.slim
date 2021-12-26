@@ -7,7 +7,7 @@
         - if (island.tags.pluck(:name) & session[:answer]).count >= 3
           - count += 1
           .island-image
-            = image_tag Island.first.image, width: '100%', height: '100%', alt: "#{island.name}の画像"
+            = image_tag 'islands/tomogashima.jpg', width: '100%', height: '100%', alt: "#{island.name}の画像"
             / - if island.image.attached?
             /   = image_tag island.image, width: '100%', height: '100%', alt: "#{island.name}の画像"
             / - else

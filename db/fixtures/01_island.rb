@@ -7,7 +7,7 @@ Island.seed(:id,
     latitude: 34.28217309472821,
     longitude: 135.01270774795321,
     prefecture: '和歌山県',
-    image: ActiveStorage::Blob.create_and_upload!(io: File.open(Rails.root.join("app/assets/images/islands/tomogashima.jpeg")), filename: 'tomogashima.jpeg')
+    image: ActiveStorage::Blob.create_and_upload!(io: File.open(Rails.root.join("app/assets/images/islands/tomogashima.jpg")), filename: 'tomogashima.jpg')
   },
 
   { id: 2,
