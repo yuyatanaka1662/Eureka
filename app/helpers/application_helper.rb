@@ -19,7 +19,7 @@ module ApplicationHelper
         description: '旅行先を考える際に「島」という選択肢を提案するサービスです。簡単な質問に答えるだけであなたにオススメの島を診断します。',
         type: 'website',
         url: request.original_url,
-        image: image_url('logos/logo-name-white.png'),
+        image: image_url('bg_image.jpg'),
         locale: 'ja_JP',
       },
       twitter: {
