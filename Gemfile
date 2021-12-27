@@ -60,4 +60,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'slim-rails'
 gem 'seed-fu'
 gem 'dotenv-rails'
-gem "aws-sdk-s3", require: false
+gem 'aws-sdk-s3', require: false
+gem 'meta-tags'
