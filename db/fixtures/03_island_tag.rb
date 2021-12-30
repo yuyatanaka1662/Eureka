@@ -111,5 +111,11 @@ IslandTag.seed(:id,
   { id: 92, island: Island.find_by(name: '佐久島'), tag: Tag.find_by(name: '芸術') },
   { id: 93, island: Island.find_by(name: '佐久島'), tag: Tag.find_by(name: 'のんびり') },
   { id: 94, island: Island.find_by(name: '佐久島'), tag: Tag.find_by(name: '初心者') },
-  { id: 95, island: Island.find_by(name: '佐久島'), tag: Tag.find_by(name: '歴史') }
-  )
+  { id: 95, island: Island.find_by(name: '佐久島'), tag: Tag.find_by(name: '歴史') },
+
+  { id: 96, island: Island.find_by(name: '福江島'), tag: Tag.find_by(name: '海') },
+  { id: 97, island: Island.find_by(name: '福江島'), tag: Tag.find_by(name: '芸術') },
+  { id: 98, island: Island.find_by(name: '福江島'), tag: Tag.find_by(name: 'のんびり') },
+  { id: 99, island: Island.find_by(name: '福江島'), tag: Tag.find_by(name: '初心者') },
+  { id: 100, island: Island.find_by(name: '福江島'), tag: Tag.find_by(name: '歴史') }
+)
