@@ -5,7 +5,7 @@
     .result-islands
       - count = 0
       - @shuffled_islands.each do |island|
-        - if (island.tags.pluck(:name) & session[:answer]).count >= 3
+        - if (island.tags.pluck(:name) & session[:answer]).count >= 4
           - count += 1
           .island-image
             - if island.image.attached?

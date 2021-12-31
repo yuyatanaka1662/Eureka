@@ -2,13 +2,13 @@
 .content-wrapper
   .question-card
     .choices
-      h3 A:予定を決めずのんびりしたい
+      h3 A:のんびりブラブラしたい
       p
         | or
-      h3 B:アクティビティでとことん遊ぶ
+      h3 B:アクティブに動きたい
     .choice-button-area
       = link_to 'A', shindan4_path(tag: { name: 'のんびり' }), class: 'btn btn-a'
-      = link_to 'B', shindan4_path(tag: { name: 'アクティビティ' }), class: 'btn btn-b'
+      = link_to 'B', shindan4_path(tag: { name: 'アクティブ' }), class: 'btn btn-b'
     .ship-progression
       .number-icon
         = image_tag 'icons/number_1_icon.png'
