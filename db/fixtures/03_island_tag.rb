@@ -113,5 +113,25 @@ IslandTag.seed(:id,
   { id: 93, island: Island.find_by(name: '福江島'), tag: Tag.find_by(name: 'トレッキング') },
   { id: 94, island: Island.find_by(name: '福江島'), tag: Tag.find_by(name: 'のんびり') },
   { id: 95, island: Island.find_by(name: '福江島'), tag: Tag.find_by(name: '大きい島') },
-  { id: 96, island: Island.find_by(name: '福江島'), tag: Tag.find_by(name: '歴史伝統') }
+  { id: 96, island: Island.find_by(name: '福江島'), tag: Tag.find_by(name: '歴史伝統') },
+
+  { id: 97, island: Island.find_by(name: '宮島(厳島)'), tag: Tag.find_by(name: '海') },
+  { id: 98, island: Island.find_by(name: '宮島(厳島)'), tag: Tag.find_by(name: 'トレッキング') },
+  { id: 99, island: Island.find_by(name: '宮島(厳島)'), tag: Tag.find_by(name: 'のんびり') },
+  { id: 100, island: Island.find_by(name: '宮島(厳島)'), tag: Tag.find_by(name: 'アクティブ') },
+  { id: 101, island: Island.find_by(name: '宮島(厳島)'), tag: Tag.find_by(name: '大きい島') },
+  { id: 102, island: Island.find_by(name: '宮島(厳島)'), tag: Tag.find_by(name: '動物') },
+  { id: 103, island: Island.find_by(name: '宮島(厳島)'), tag: Tag.find_by(name: '歴史伝統') },
+
+  { id: 104, island: Island.find_by(name: '直島'), tag: Tag.find_by(name: '海') },
+  { id: 105, island: Island.find_by(name: '直島'), tag: Tag.find_by(name: '芸術') },
+  { id: 106, island: Island.find_by(name: '直島'), tag: Tag.find_by(name: 'のんびり') },
+  { id: 107, island: Island.find_by(name: '直島'), tag: Tag.find_by(name: '大きい島') },
+
+  { id: 108, island: Island.find_by(name: '男木島'), tag: Tag.find_by(name: 'トレッキング') },
+  { id: 109, island: Island.find_by(name: '男木島'), tag: Tag.find_by(name: '芸術') },
+  { id: 110, island: Island.find_by(name: '男木島'), tag: Tag.find_by(name: 'のんびり') },
+  { id: 111, island: Island.find_by(name: '男木島'), tag: Tag.find_by(name: '狭い島') },
+  { id: 112, island: Island.find_by(name: '男木島'), tag: Tag.find_by(name: '動物') },
+  { id: 113, island: Island.find_by(name: '男木島'), tag: Tag.find_by(name: '歴史伝統') }
 )

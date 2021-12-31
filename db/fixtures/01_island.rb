@@ -226,5 +226,41 @@ Island.seed(:id,
     longitude: 128.75726440632837,
     prefecture: '長崎県',
     image: ActiveStorage::Blob.create_and_upload!(io: File.open('app/assets/images/islands/hukuejima.jpg'), filename: 'hukuejima.jpg')
+  },
+
+  {
+    id: 21,
+    name: '宮島(厳島)',
+    description: '日本三景に数えられる広島県「宮島」。海上に浮かぶ世界遺産「厳島神社」は見応えがあり大鳥居は日本では知らない人はいないと言っても過言ではありません。同じく世界遺産に登録されている「弥山原始林」もあり、標高535mの弥山はロープウェイで登ることもできますが、手軽にトレッキングも楽しめます。他にも西日本有数の規模を誇る「みやじマリン宮島水族館」、キャンプや釣り、マリンスポーツが楽しめる「宮島包ヶ浦自然公園」など楽しめるスポットが盛り沢山です。島内には人に慣れた野生の鹿が多く、神社周辺を散策中に気がついたら隣に鹿がいた、なんてこともあるかも？',
+    information: 'https://hatsu-navi.jp/',
+    address: '〒739-0588 広島県廿日市市宮島町',
+    latitude: 34.273704187334566,
+    longitude: 132.30544713643113,
+    prefecture: '広島県',
+    image: ActiveStorage::Blob.create_and_upload!(io: File.open('app/assets/images/islands/miyajima.jpg'), filename: 'miyajima.jpg')
+  },
+
+  {
+    id: 22,
+    name: '直島',
+    description: 'アートの島として有名な、瀬戸内海に浮かぶ「直島」。島まるごと美術館と言われるほど美術館が多く、様々なアート作品に出会うことができます。建築家、安藤忠雄さん設計の「地中海美術館」や「ベネッセハウスミュージアム」、世界的アーティスト、草間彌生さんの「赤かぼちゃ」「黄かぼちゃ」、古民家を改装し、家そのものが作品になっている「家プロジェクト」、入浴も可能な銭湯がアート作品になっている珍しいスポット、直島銭湯「I♥湯」などなど、他にもたくさんあり一日では周りきれないほど。また夜には青く輝く海ほたるを見ることもでき、ぜひ時間に余裕を持って訪れたい島です。',
+    information: 'https://www.naoshima.net',
+    address: '香川県香川郡直島町',
+    latitude: 34.457960686095966,
+    longitude: 133.98639184381048,
+    prefecture: '香川県',
+    image: ActiveStorage::Blob.create_and_upload!(io: File.open('app/assets/images/islands/naoshima.jpg'), filename: 'naoshima.jpg')
+  },
+
+  {
+    id: 23,
+    name: '男木島',
+    description: '瀬戸内国際芸術祭の会場のひとつ、香川県「男木島」。港のすぐ側の交流館「男木島の魂」、路地の中に現れるカラフルなペイントが施された壁画「路地壁面プロジェクト wallalley」、ノアの方舟からヒントを得た立体作品「歩く方舟」などのアート作品や、日本の灯台50選にも選ばれ、全国的にも珍しい総御影石造りの洋式灯台「男木島灯台」など小さい島には魅力がたくさん。また「オンバファクトリー」がオンバ(乳母車)を修理、ペイントしてアート作品に生まれ変わらせたものを地元の方が日常的に使っており、アートが日常に溶け込んでいる様子を見ることができます。猫島としても知られており、港付近や、島の中心に位置する「豊玉姫神社」の入り口付近が猫スポットとなっています。',
+    information: 'https://www.my-kagawa.jp/shimatabi/feature/shimatabi/ogijima',
+    address: '〒760-0091 香川県高松市男木町',
+    latitude: 34.426540602540896,
+    longitude: 134.06038341558312,
+    prefecture: '香川県',
+    image: ActiveStorage::Blob.create_and_upload!(io: File.open('app/assets/images/islands/ogijima.jpg'), filename: 'ogijima.jpg')
   }
 )
