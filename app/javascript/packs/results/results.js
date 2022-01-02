@@ -1,5 +1,5 @@
 document.addEventListener('turbolinks:load', () => {
   $(function() {
-    $('.result-area').fadeIn(2000);
+    $('.result-display-none').fadeIn(2000);
   });
 });

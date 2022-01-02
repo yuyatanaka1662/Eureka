@@ -14,11 +14,15 @@
 }
 
 .result-area {
-  display: none;
+  // display: none;
   padding: 1rem 0 1rem;
   @media (max-width: 425px) {
     font-size: 2rem;
   }
+}
+
+.result-display-none {
+  display: none;
 }
 
 .result-islands {
