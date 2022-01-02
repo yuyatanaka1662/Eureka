@@ -26,5 +26,8 @@
                   = "#{island.name}info"
               = image_tag 'logos/boy-and-girl-gray.png', class: 'boy-and-girl'
         - break if count == 1
-  .retry-button
+  .buttons
     = link_to 'もう一度探す', root_path, class: 'btn btn-diagnosis'
+    = link_to "https://twitter.com/share?url=https://shimasagashi.herokuapp.com/&text=シマサガシで島を探しました！/&hashtags=シマサガシ", class: 'btn btn-primary', target: '_blank' do
+      i class="fab fa-twitter-square"
+      |  Twitterでシェア
