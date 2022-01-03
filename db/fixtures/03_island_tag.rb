@@ -133,5 +133,11 @@ IslandTag.seed(:id,
   { id: 110, island: Island.find_by(name: '男木島'), tag: Tag.find_by(name: 'のんびり') },
   { id: 111, island: Island.find_by(name: '男木島'), tag: Tag.find_by(name: '狭い島') },
   { id: 112, island: Island.find_by(name: '男木島'), tag: Tag.find_by(name: '動物') },
-  { id: 113, island: Island.find_by(name: '男木島'), tag: Tag.find_by(name: '歴史伝統') }
+  { id: 113, island: Island.find_by(name: '男木島'), tag: Tag.find_by(name: '歴史伝統') },
+
+  { id: 114, island: Island.find_by(name: '野崎島'), tag: Tag.find_by(name: 'トレッキング') },
+  { id: 115, island: Island.find_by(name: '野崎島'), tag: Tag.find_by(name: '廃墟') },
+  { id: 116, island: Island.find_by(name: '野崎島'), tag: Tag.find_by(name: 'アクティブ') },
+  { id: 117, island: Island.find_by(name: '野崎島'), tag: Tag.find_by(name: '狭い島') },
+  { id: 118, island: Island.find_by(name: '野崎島'), tag: Tag.find_by(name: '歴史伝統') }
 )
