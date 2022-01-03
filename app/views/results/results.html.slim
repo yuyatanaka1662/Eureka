@@ -28,8 +28,8 @@
                 = image_tag 'logos/boy-and-girl-gray.png', class: 'boy-and-girl'
         .buttons
           = link_to 'もう一度探す', root_path, class: 'btn btn-diagnosis retry'
-          = link_to "https://twitter.com/share?url=https://shimasagashi.herokuapp.com&text=シマサガシで「#{island.name}(#{island.prefecture})」をオススメされました！&hashtags=シマサガシ", class: 'btn btn-primary', target: '_blank' do
-            i class="fab fa-twitter"
-            |  ツイートする
+          / = link_to "https://twitter.com/share?url=https://shimasagashi.herokuapp.com&text=シマサガシで「#{island.name}(#{island.prefecture})」をオススメされました！&hashtags=シマサガシ", class: 'btn btn-primary', target: '_blank' do
+          /   i class="fab fa-twitter"
+          /   |  ツイートする
         - break if count == 1
 
