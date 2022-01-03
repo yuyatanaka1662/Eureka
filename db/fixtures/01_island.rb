@@ -262,5 +262,17 @@ Island.seed(:id,
     longitude: 134.06038341558312,
     prefecture: '香川県',
     image: ActiveStorage::Blob.create_and_upload!(io: File.open('app/assets/images/islands/ogijima.jpg'), filename: 'ogijima.jpg')
+  },
+
+  {
+    id: 24,
+    name: '野崎島',
+    description: 'ほぼ無人島で、集落跡が世界文化遺産の構成資産の1つになっている「野崎島」。かつては3つの集落がありましたが1990年代に全ての島民が島を離れ、今では宿泊施設を管理する方が常駐されているだけだそう。人気ホラーゲーム「サイレン」のモデルの1つと言われ、島最大の集落で今は廃村になった「野崎集落」、丘の上に佇む姿が絵になるレンガ造りの「旧野首(のくび)教会」、一見サバンナのような草原地帯を抜けた先の、崖下の湾を一望できる「北崎展望所」、トレッキングをした先の高台に建てられている「沖ノ神島(おきのこうじま)神社」、神社の背後にそびえ立つ「王位石」など、人は居なくとも見所は数多くある島です。渡航の際は安全管理のため事前連絡が必要なため注意してくださいね。',
+    information: 'https://www.nagasaki-tabinet.com/',
+    address: '〒857-4709 長崎県北松浦郡小値賀町野崎郷',
+    latitude: 33.193320046703995,
+    longitude: 129.130775209619,
+    prefecture: '長崎県',
+    image: ActiveStorage::Blob.create_and_upload!(io: File.open('app/assets/images/islands/nozakijima.jpg'), filename: 'nozakijima.jpg')
   }
 )
