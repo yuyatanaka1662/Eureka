@@ -23,12 +23,13 @@
 
 .result-display-none {
   display: none;
+  padding: 0 5rem;
 }
 
 .result-islands {
   display: flex;
   height: 50rem;
-  padding: 0 5rem;
+  // padding: 0 5rem;
   @media (max-width:425px) {
     display: block;
     padding: 0;
@@ -82,6 +83,21 @@
   @media (max-width: 425px) {
     font-size: 1.4rem;
   }
+}
+
+.map {
+  display: flex;
+}
+
+#map {
+  height: 50rem;
+  width: 60%;
+}
+
+.spot {
+  height: 50rem;
+  width: 40%;
+  background-color: lightgreen;
 }
 
 .btn-outline-dark {
