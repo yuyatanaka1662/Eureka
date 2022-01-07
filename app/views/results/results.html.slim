@@ -28,6 +28,9 @@
                 = image_tag 'logos/boy-and-girl-gray.png', class: 'boy-and-girl'
           .map
             .spot
+              - island.spots.each do |spot|
+                li
+                  = spot.name
             #map
             javascript:
               function initMap(){
@@ -35,7 +38,7 @@
                 center: {lat: #{island.latitude}, lng: #{island.longitude}},
                 zoom: 13
                 });
-                const marker = new google.maps.Marker({
+                let marker1 = new google.maps.Marker({
                 position: {lat: #{island.latitude}, lng: #{island.longitude}},
                 map: map,
                 });
