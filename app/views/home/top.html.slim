@@ -1,4 +1,8 @@
 .content-wrapper
+  .error-message
+    - if flash[:primary]
+      p.alert.alert-primary
+        = flash[:primary]
   .container
     = image_tag 'logos/logo-mark.png', class: 'logo-mark', alt: 'シマサガシロゴマーク画像'
     = image_tag 'logos/logo-name-white.png', class: 'service-title', alt: 'シマサガシタイトルロゴ画像'
