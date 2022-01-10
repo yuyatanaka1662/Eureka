@@ -1,6 +1,10 @@
 class ResultsController < ApplicationController
+  before_action :add_answer_to_session
+
   def results
-    add_answer_to_session
+    if session[:answer].length != 5
+      redirect_to root_path, flash: {primary: '正常に診断できませんでした。もう一度始めからやり直してください。'}
+    end
     @shuffled_islands = Island.all.shuffle
   end
 end

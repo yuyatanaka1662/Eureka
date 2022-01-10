@@ -1,3 +1,6 @@
 class HomeController < ApplicationController
-  def top; end
+  def top
+    session[:answer] = []
+    session[:answer].clear if session[:answer] != nil
+  end
 end

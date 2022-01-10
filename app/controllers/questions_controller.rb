@@ -1,22 +1,13 @@
 class QuestionsController < ApplicationController
-  def shindan1
-    session[:answer] = []
-    session[:answer].clear if session[:answer] != nil
-  end
+  before_action :add_answer_to_session, only: %i[shindan2 shindan3 shindan4 shindan5]
 
-  def shindan2
-    add_answer_to_session
-  end
+  def shindan1; end
 
-  def shindan3
-    add_answer_to_session
-  end
+  def shindan2; end
 
-  def shindan4
-    add_answer_to_session
-  end
+  def shindan3; end
 
-  def shindan5
-    add_answer_to_session
-  end
+  def shindan4; end
+
+  def shindan5; end
 end
