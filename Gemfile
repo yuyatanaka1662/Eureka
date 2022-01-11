@@ -62,3 +62,4 @@ gem 'seed-fu'
 gem 'dotenv-rails'
 gem 'aws-sdk-s3', require: false
 gem 'meta-tags'
+gem 'gon'
