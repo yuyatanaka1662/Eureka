@@ -12,6 +12,7 @@ require('bootstrap/dist/js/bootstrap.min.js')
 import './buttons/buttons'
 import './questions/questions'
 import './results/results'
+import './maps/map'
 import './modals/terms'
 import './modals/privacy_policy'
 import '@fortawesome/fontawesome-free/js/all'
