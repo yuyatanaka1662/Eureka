@@ -32,7 +32,18 @@
             /     li.spot-length type='none'
             /       = spot.name
             #map
-              = javascript_pack_tag 'maps/map'
+              script src="https://maps.googleapis.com/maps/api/js?key=#{ ENV['GOOGLE_MAP_API_KEY'] }&callback=initMap&v=weekly" async=""
+              javascript:
+                function initMap(){
+                  map = new google.maps.Map(document.getElementById('map'), {
+                    center: {lat: #{island.latitude}, lng: #{island.longitude}},
+                    zoom: 13
+                  });
+                  marker = new google.maps.Marker({
+                    position: {lat: #{island.latitude}, lng: #{island.longitude}},
+                    map: map
+                  });
+                };
         .buttons
           = link_to 'もう一度探す', root_path, class: 'btn btn-diagnosis retry'
           = link_to "https://twitter.com/share?url=https://shimasagashi.herokuapp.com&text=シマサガシで「#{island.name}(#{island.prefecture})」をオススメされました！&hashtags=シマサガシ", class: 'btn btn-primary', target: '_blank' do

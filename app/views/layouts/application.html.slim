@@ -15,11 +15,10 @@ html lang='ja'
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
     - if Rails.env.production?
       = render 'shared/google_analytics'
   body
-    script src="https://maps.googleapis.com/maps/api/js?key=#{ ENV['GOOGLE_MAP_API_KEY'] }&callback=initMap&v=weekly" async=""
     = render 'shared/header'
     = yield
     = render 'shared/footer'
-    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
