@@ -3,7 +3,7 @@
   h3 あなたにおすすめの島は…
   .result-area
     - count = 0
-    - @shuffled_islands.each do |island|
+    - @islands.shuffle.each do |island|
       - if (island.tags.pluck(:name) & session[:answer]).count >= 4
         - count += 1
         .result-display-none
@@ -32,17 +32,7 @@
             /     li.spot-length type='none'
             /       = spot.name
             #map
-              javascript:
-                function initMap(){
-                  let map = new google.maps.Map(document.getElementById('map'), {
-                  center: {lat: #{island.latitude}, lng: #{island.longitude}},
-                  zoom: 13
-                  });
-                  let marker = new google.maps.Marker({
-                  position: {lat: #{island.latitude}, lng: #{island.longitude}},
-                  map: map
-                  });
-                };
+              = javascript_pack_tag 'maps/map'
         .buttons
           = link_to 'もう一度探す', root_path, class: 'btn btn-diagnosis retry'
           = link_to "https://twitter.com/share?url=https://shimasagashi.herokuapp.com&text=シマサガシで「#{island.name}(#{island.prefecture})」をオススメされました！&hashtags=シマサガシ", class: 'btn btn-primary', target: '_blank' do

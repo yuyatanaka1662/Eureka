@@ -5,6 +5,6 @@ class ResultsController < ApplicationController
     if session[:answer].length != 5
       redirect_to root_path, flash: {primary: '正常に診断できませんでした。もう一度始めからやり直してください。'}
     end
-    @shuffled_islands = Island.all.shuffle
+    @islands = Island.all
   end
 end
