@@ -1,5 +1,6 @@
 ## サービス名
 ### シマサガシ
+https://shimasagashi.herokuapp.com/
 
 ## サービス概要
 旅行に行きたいけど行き先がなかなか決まらない…  
